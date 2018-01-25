@@ -1,8 +1,24 @@
 // =======================================================================
-// Program : GPSTest3_GPS_and_Screen
+// Program : GPS on OLED Display
 // Purpose : GPS Read and Display position, speed and satellite count on screen.
 // Author  : Steve Cowell
 // Date    : January 23, 2018
+// Comments
+//
+// GPS BN-880
+// GND = GND
+// 3.3v = VCC
+// 8
+// 7
+// Square OLED 1.3 V2.0 with GND VCC CLK MOSI RES DC and CD Connections 
+//  Connections:
+//  GND = GND
+//  VCC = 5V
+//  CLK = 10
+//  MOSI = 7
+//  RES = 13
+//  DC = 11
+//  CS = 12
 // =======================================================================
 
 // Initialise Screen -----------------------
@@ -34,7 +50,7 @@ NMEAGPS gps;
 
 // Serial port for the GPS =================================================================
  #include <AltSoftSerial.h>
- AltSoftSerial gpsPort;  // pin 8 to GPS TX, pin 9 to GPS RX
+ AltSoftSerial gpsPort;  // pin 7 to GPS TX, pin 9 to GPS RX
 
 // Setup ==================================================================================
 void setup()
