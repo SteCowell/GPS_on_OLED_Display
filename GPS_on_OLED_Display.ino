@@ -50,7 +50,7 @@ NMEAGPS gps;
 
 // Serial port for the GPS =================================================================
  #include <AltSoftSerial.h>
- AltSoftSerial gpsPort;  // pin 7 to GPS TX, pin 9 to GPS RX
+ AltSoftSerial gpsPort;  // pin 8 to GPS TX, pin 9 to GPS RX
 
 // Setup ==================================================================================
 void setup()
